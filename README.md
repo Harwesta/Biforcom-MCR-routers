@@ -23,6 +23,7 @@ Additional features :
 - hardware watchdog MAX6371KA (resets power supply for Orange Pi Zero).
 - real time clock DS3231M i2c (TW0 Orange Pi Zero) bus with backup battery CR2032.
 - dedicated DC-DC converters TPS54332 3.3V 3A with GPIO-controlled for each modems.
+- main DC-DC converters TPS54332 5V 3A with watchdog MAX6371KA controlled for Orange Pi Zero.
 
 Power adapter indoor MCR-10x: 12V 3A (5.5mm barrel)
 Power adapter outdoor MCR-10x-O: passive PoE 12V 3A
