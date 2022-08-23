@@ -7,7 +7,7 @@ CPU: Allwinner H2+ Quad-core Cortex-A7 up to 1.2GHz.
 RAM: 512MB DDR3.
 Storage: TF card (Max. 32GB) / 2MB Spi-NOR Flash.
 Network:
-- onboard 10/100M Ethernet RJ45 POE +5V (default off).
+- onboard 10/100M Ethernet RJ45 POE +5V (PoE default off).
 - Onboard WiFi 	XR819, IEEE 802.11 b/g/n (default off).
 
 Indoor version MCR-10x:
