@@ -1,8 +1,8 @@
 # Biforcom-MCR-routers
 Openwrt for Biforcom MCR-10x MCR-20x indoor/outdoor routers
-Full technical description for MCR-10x https://b4com.tech/?page_id=538
 
 # Biforcom MCR-10x
+Full technical description for MCR-10x https://b4com.tech/?page_id=538.
 Based on: Orange Pi Zero rev.1.5 board.
 CPU: Allwinner H2+ Quad-core Cortex-A7 up to 1.2GHz.
 RAM: 512MB DDR3.
@@ -19,7 +19,7 @@ Indoor version MCR-10x:
 Outdoor MCR-10x-O:
 - on main board 2x Quectel EC25-EU LTE modem Cat.4 (two LCC module), 2x2 MIMO panel antenna.
 
-Additional features :
+Additional features:
 - hardware watchdog MAX6371KA (resets power supply for Orange Pi Zero).
 - real time clock DS3231M i2c (TW0 Orange Pi Zero) bus with backup battery CR2032 (indoor version only).
 - dedicated DC-DC converters TPS54332 3.3V 3A with GPIO-controlled for each modems.
@@ -29,7 +29,7 @@ Power adapter indoor MCR-10x: 12V 3A (5.5mm barrel)
 Power adapter outdoor MCR-10x-O: passive PoE 12V 3A
 
 # Biforcom MCR-20x
-Full technical description for MCR-20x https://b4com.tech/?page_id=280
+Full technical description for MCR-20x https://b4com.tech/?page_id=280.
 Based on: Nanopi Core board.
 CPU: Allwinner H3 Quad-core Cortex-A7 up to 1.2GHz.
 RAM: 512MB DDR3.
@@ -50,7 +50,10 @@ Power adapter: 12V 4A (5.5mm barrel)
 
 For normal Openwrt working you need:
 1. Cut 3 wires near at STM32.
-2. Solder two jumper from GPIO то pin #3 U1 and U3 as a pictures.
-3. Cut or pull-up pin #3 U2.
-![MCR-202_modems_power](https://user-images.githubusercontent.com/65107625/186838779-f7e22d2c-ca9a-4793-9a03-1703812c7c2b.jpg)
 ![MCR-202_STM32_cut_29-30-31](https://user-images.githubusercontent.com/65107625/186838787-e2084d41-d34a-4a55-9a14-95e1219d3175.jpg)
+
+2. Solder two jumper from GPIO то pin #3 U1 and U3 as a pictures.
+![MCR-202_modems_power](https://user-images.githubusercontent.com/65107625/186838779-f7e22d2c-ca9a-4793-9a03-1703812c7c2b.jpg)
+
+
+3. Cut or pull-up pin #3 U2.
