@@ -2,12 +2,13 @@
 Openwrt for Biforcom MCR-10x MCR-20x indoor/outdoor routers
 Full technical description for MCR-10x https://b4com.tech/?page_id=538
 
+# Biforcom MCR-10x
 Based on: Orange Pi Zero rev.1.5 board.
 CPU: Allwinner H2+ Quad-core Cortex-A7 up to 1.2GHz.
 RAM: 512MB DDR3.
 Storage: TF card (Max. 32GB) / 2MB Spi-NOR Flash.
 Network:
-- onboard 10/100M Ethernet RJ45 POE +5V (PoE default off).
+- onboard 10/100M Ethernet RJ45 (LAN0, POE +5V - default off).
 - Onboard WiFi 	XR819, IEEE 802.11 b/g/n (default off).
 
 Indoor version MCR-10x:
@@ -16,14 +17,40 @@ Indoor version MCR-10x:
 - one omni antenna is connected to each modem.
 
 Outdoor MCR-10x-O:
-- on main board 2x Quectel EC25-EU LTE modem Cat.4 (two LCC module).
-- 2x2 MIMO panel antenna.
+- on main board 2x Quectel EC25-EU LTE modem Cat.4 (two LCC module), 2x2 MIMO panel antenna.
 
 Additional features :
 - hardware watchdog MAX6371KA (resets power supply for Orange Pi Zero).
-- real time clock DS3231M i2c (TW0 Orange Pi Zero) bus with backup battery CR2032.
+- real time clock DS3231M i2c (TW0 Orange Pi Zero) bus with backup battery CR2032 (indoor version only).
 - dedicated DC-DC converters TPS54332 3.3V 3A with GPIO-controlled for each modems.
-- main DC-DC converters TPS54332 5V 3A with watchdog MAX6371KA controlled for Orange Pi Zero.
+- main DC-DC converters TPS54332 5V 3A with watchdog MAX6371KA controlled.
 
 Power adapter indoor MCR-10x: 12V 3A (5.5mm barrel)
 Power adapter outdoor MCR-10x-O: passive PoE 12V 3A
+
+# Biforcom MCR-20x
+Full technical description for MCR-20x https://b4com.tech/?page_id=280
+Based on: Nanopi Core board.
+CPU: Allwinner H3 Quad-core Cortex-A7 up to 1.2GHz.
+RAM: 512MB DDR3.
+Storage: TF card (Max. 32GB) / 2MB Spi-NOR Flash.
+Network:
+- Nanopi Core 10/100M Ethernet RJ45 on main board (LAN0).
+- on main board 3x SMSC LAN9514 USB hub with Eth 10/100M Ethernet converters (LAN1, LAN2, LAN3).
+- on main board up to 3x Quectel EC25-EU LTE modem Cat.4 (LCC module).
+- two omni antenna connected to each modem, MIMO 2x2 supported
+- one USB 2.0
+
+Additional features :
+- supervisor/watchdog based on STM32L052T8 controller (resets power supply for Nanopi Core and modems). Powered by Li-Ion 18650 2200mAh battery with charger.
+- dedicated DC-DC converters TPS54332 3.3V 3A with STM32L052T8-controlled for each modems.
+- main DC-DC converters TPS54332 5V 3A with watchdog STM32L052T8-controlled.
+
+Power adapter: 12V 4A (5.5mm barrel)
+
+For normal Openwrt working you need:
+1. Cut 3 wires near at STM32.
+2. Solder two jumper from GPIO то pin #3 U1 and U3 as a pictures.
+3. Cut or pull-up pin #3 U2.
+![MCR-202_modems_power](https://user-images.githubusercontent.com/65107625/186838779-f7e22d2c-ca9a-4793-9a03-1703812c7c2b.jpg)
+![MCR-202_STM32_cut_29-30-31](https://user-images.githubusercontent.com/65107625/186838787-e2084d41-d34a-4a55-9a14-95e1219d3175.jpg)
