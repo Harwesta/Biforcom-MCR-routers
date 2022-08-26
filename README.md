@@ -53,7 +53,6 @@ For normal Openwrt working you need:
 ![MCR-202_STM32_cut_29-30-31](https://user-images.githubusercontent.com/65107625/186838787-e2084d41-d34a-4a55-9a14-95e1219d3175.jpg)
 
 2. Solder two jumper from GPIO то pin #3 U1 and U3 as a pictures.
-![MCR-202_modems_power](https://user-images.githubusercontent.com/65107625/186838779-f7e22d2c-ca9a-4793-9a03-1703812c7c2b.jpg)
-
+![MCR-202_modems_power](https://user-images.githubusercontent.com/65107625/186840582-ff58f7bf-eae1-4672-a28c-e2a8379ed1c3.jpg)
 
 3. Cut or pull-up pin #3 U2.
