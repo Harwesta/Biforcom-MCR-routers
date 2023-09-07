@@ -48,9 +48,10 @@ Network:
 - one USB 2.0
 
 Additional features :
-- supervisor/watchdog/buttons controller based on STM32L052T8 (resets power supply for Nanopi Core and modems). Powered by Li-Ion 18650 2200mAh battery with charger.
+- supervisor/watchdog/buttons controller based on STM32L052T8 (resets power supply for Nanopi Core and modems).
 - dedicated DC-DC converters TPS54332 3.3V 3A with STM32L052T8-controlled for each modems.
 - main DC-DC converters TPS54332 5V 3A with watchdog STM32L052T8-controlled.
+- onboard cradle with Li-Ion 18650 2200mAh battery. Charger and step-up converter for uninterruptible power supply.
 
 Power adapter: 12V 4A (5.5mm barrel)
 
