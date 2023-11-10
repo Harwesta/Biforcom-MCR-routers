@@ -4,10 +4,10 @@ Openwrt for Biforcom MCR-10x MCR-20x indoor/outdoor routers
 # Biforcom MCR-10x
 Full technical description for MCR-10x https://b4com.tech/?page_id=538.
 
-Based on: Orange Pi Zero rev.1.5 board.
+Based on: Orange Pi Zero rev 1.4/1.5 board.
 
 CPU: Allwinner H2+ Quad-core Cortex-A7 up to 1.2GHz.
-RAM: 512MB DDR3.
+RAM: 256/512MB DDR3.
 Storage: TF card (Max. 32GB) / 2MB Spi-NOR Flash.
 
 Network:
