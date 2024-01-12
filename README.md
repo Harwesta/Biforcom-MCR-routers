@@ -12,12 +12,12 @@ Storage: TF card (Max. 32GB) / 2MB Spi-NOR Flash.
 
 Network:
 - onboard 10/100M Ethernet RJ45 (LAN0, POE +5V - default off).
-- Onboard WiFi 	XR819, IEEE 802.11 b/g/n (default off).
+- onboard WiFi 	XR819, IEEE 802.11 b/g/n (default off).
 
 Indoor version MCR-10x:
 - on main board 2x SMSC LAN9514 USB hub with Eth 10/100M Ethernet converters (LAN1, LAN2).
 - on main board up to 3x Quectel EC25-EU LTE modem Cat.4 (two LCC module and one miniPCIE module).
-- one omni antenna is connected to each modem.
+- SMA antenna connector to each modem to 'main' modem port, another variant use SMA-to-IPEX Y-cable for 'main' and 'aux' modem port.
 
 Outdoor MCR-10x-O:
 - on main board 2x Quectel EC25-EU LTE modem Cat.4 (two LCC module), 2x2 MIMO panel antenna.
