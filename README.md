@@ -16,11 +16,11 @@ Network:
 
 Indoor version MCR-10x:
 - on main board 2x SMSC LAN9514 USB hub with Eth 10/100M Ethernet converters (LAN1, LAN2).
-- on main board up to 3x Quectel EC25-EU LTE modem Cat.4 (two LCC module and one miniPCIE module).
+- on main board up to 3x Quectel EC25-EU or MeiG Smart SLM750 LTE modem Cat.4 (two LCC module and one miniPCIE module).
 - SMA antenna connector to each modem to 'main' modem port, another variant use SMA-to-IPEX Y-cable for 'main' and 'aux' modem port.
 
 Outdoor MCR-10x-O:
-- on main board 2x Quectel EC25-EU LTE modem Cat.4 (two LCC module), 2x2 MIMO panel antenna.
+- on main board 2x Quectel EC25-EU or MeiG Smart SLM750 LTE modem Cat.4 (two LCC module), 2x2 MIMO panel antenna.
 
 Additional features:
 - hardware watchdog MAX6371KA (resets power supply for Orange Pi Zero).
